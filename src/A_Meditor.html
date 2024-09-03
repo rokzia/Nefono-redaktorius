@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+   <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
+   <link rel="stylesheet" type = "text/css" href="./editor.css">
+  <title>Apie mus keitimas</title>
+  <style>
+    input, textarea {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Aprašo keitimas</h2>
+  <textarea class="AreaF" style="width: 600px; height: 400px;" id="TextBox" placeholder="..."></textarea>
+  <h2></h2>
+  <button class="buttonF" id="Confirm" style="margin-top: 10px;">Taikyti</button>
+  <button class="buttonF" id="Back" style="margin-left: 20px;">Grįžti</button>
+<script src="./AMEditor.js"></script>
+
+</body>
+</html>

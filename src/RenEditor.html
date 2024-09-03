@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
+  <title>Renginių keitimas</title>
+  <style>
+    textarea {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      border: 1px solid #000;
+    }
+  </style>
+
+<link rel="stylesheet" type = "text/css" href="./editor.css">
+</head>
+<body>
+
+<div id="Creator">
+    <h2>Renginio pavadinimas</h2>
+    <input class="AreaF" type="text" id="Name" placeholder="...">
+
+    <h2>Renginio coveris</h2>
+    <textarea style="width: 500px; overflow-x: scroll;" class="AreaF" type="text" id="CoverPath" placeholder="..."></textarea><button id="Cover" style="margin-left: 10px;">Pasirinkti</button>
+
+    <h2>Renginio aprašas</h2>
+    <textarea class="AreaF" style="width: 500px; height: 300px;" id="Desc" placeholder="..."></textarea>
+
+    <h2>Adresas, data</h2>
+    <textarea class="AreaF" style="width: 500px; height: 300px;" id="Info" placeholder="..."></textarea>
+
+    <h2>Renginio nuotraukos</h2>
+    <textarea style="width: 500px; height: 80px; overflow-y: scroll;" class="AreaF" type="text" id="PhotoPath" placeholder="..."></textarea><button id="Photos" style="margin-left: 10px;">Pasirinkti</button>
+
+    <h2>Renginio nuoroda</h2>
+    <textarea class="AreaF" style="width: 350px; height: 50px;" id="Link" placeholder="..."></textarea>
+
+    <br>
+
+    <button class="buttonF" style="margin-top: 50px;" id="Add">Pridėti</button>
+
+    <div style="display: inline ;position: absolute; right: 0%; margin-top: 50px">
+    <button class="buttonF" id="Save" style="margin-right: 25px;">Irašyti pakeitimus</button>
+    <button class="buttonF" id="Cancel" style="margin-right: 25px;">Grįžti</button>
+    </div>
+
+</div>
+
+
+<div id="Existing" style="margin-top: 50px;">
+<hr>
+
+</div>
+
+<script src = "RenEditor.js"></script>
+</body>
+</html>
